@@ -1,0 +1,13 @@
+
+function restart() {
+  console.log("called")
+  gameState = "over"
+  location.reload()
+
+}
+
+
+  reset_btn = createImg("reset-removebg-preview.png");
+  reset_btn.position(width - 50, 100);
+  reset_btn.size(50, 50);
+  reset_btn.mouseClicked(restart);
